@@ -1,0 +1,265 @@
+[
+  {
+    "type": "greetings",
+    "examples": [
+      {
+        "user_input": "merhaba",
+        "intent": "greet",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim? Hangi tür veya ruh halinde müzik dinlemek istersiniz?"
+      },
+      {
+        "user_input": "selam",
+        "intent": "greet",
+        "response": "Selam! Bugün nasılsınız? Size özel müzik önerileri için ruh halinizi veya sevdiğiniz bir türü belirtebilirsiniz."
+      },
+      {
+        "user_input": "nasılsın",
+        "intent": "greet",
+        "response": "Ben bir müzik asistanıyım ve size yardımcı olmak için buradayım! Hangi tür müzik dinlemek istersiniz?"
+      }
+    ]
+  },
+  {
+    "type": "mood_based",
+    "examples": [
+      {
+        "user_input": "mutlu hissediyorum",
+        "intent": "mood_happy",
+        "response": "Mutlu bir ruh hali için size şunları önerebilirim: Tarkan - Yolla, MFÖ - Peki Peki Anladık, Kenan Doğulu - Şıkır Şıkır",
+        "mood": "mutlu",
+        "tags": [
+          "mutlu",
+          "neşeli",
+          "keyifli"
+        ]
+      },
+      {
+        "user_input": "mutlu",
+        "intent": "mood_happy",
+        "response": "Mutlu bir ruh hali için size şunları önerebilirim: Tarkan - Yolla, MFÖ - Peki Peki Anladık, Kenan Doğulu - Şıkır Şıkır",
+        "mood": "mutlu",
+        "tags": [
+          "mutlu",
+          "neşeli",
+          "keyifli"
+        ]
+      },
+      {
+        "user_input": "enerjik hissediyorum",
+        "intent": "mood_energetic",
+        "response": "Enerji dolu bir müzik listesi için: Athena - Ben Böyleyim, Manga - Bir Kadın Çizeceksin, Duman - Senden Daha Güzel",
+        "mood": "enerjik",
+        "tags": [
+          "enerjik",
+          "hareketli",
+          "dinamik"
+        ]
+      },
+      {
+        "user_input": "enerjik",
+        "intent": "mood_energetic",
+        "response": "Enerji dolu bir müzik listesi için: Athena - Ben Böyleyim, Manga - Bir Kadın Çizeceksin, Duman - Senden Daha Güzel",
+        "mood": "enerjik",
+        "tags": [
+          "enerjik",
+          "hareketli",
+          "dinamik"
+        ]
+      },
+      {
+        "user_input": "romantik hissediyorum",
+        "intent": "mood_romantic",
+        "response": "Romantik bir ruh halindeyseniz, işte tam size göre şarkılar: Aşk - Sezen Aksu, Seni Seviyorum - Kenan Doğulu, Yan Benimle - Sıla",
+        "mood": "romantik",
+        "tags": [
+          "romantik",
+          "aşk",
+          "sevgi"
+        ]
+      },
+      {
+        "user_input": "romantik",
+        "intent": "mood_romantic",
+        "response": "Romantik bir akşam için: Sezen Aksu - İhanetten Geri Kalan, Teoman - Rüzgar Gülü, Sıla - Yan Benimle",
+        "mood": "romantik",
+        "tags": [
+          "romantik",
+          "aşk",
+          "sevgi"
+        ]
+      },
+      {
+        "user_input": "üzgün hissediyorum",
+        "intent": "mood_sad",
+        "response": "Duygusal anlar için: Duman - Melankoli, mor ve ötesi - Bir Derdim Var, Manga - Cevapsız Sorular",
+        "mood": "üzgün",
+        "tags": [
+          "üzgün",
+          "hüzünlü",
+          "kederli"
+        ]
+      },
+      {
+        "user_input": "üzgün",
+        "intent": "mood_sad",
+        "response": "Duygusal anlar için: Duman - Melankoli, mor ve ötesi - Bir Derdim Var, Manga - Cevapsız Sorular",
+        "mood": "üzgün",
+        "tags": [
+          "üzgün",
+          "hüzünlü",
+          "kederli"
+        ]
+      },
+      {
+        "user_input": "sakin hissediyorum",
+        "intent": "mood_calm",
+        "response": "Sakinleşmek için dinleyebileceğiniz müzikler: Yüksek Sadakat - Aşk Durdukça, Feridun Düzağaç - İstanbul, Pinhani - Hele Bi Gel",
+        "mood": "sakin",
+        "tags": [
+          "sakin",
+          "huzurlu",
+          "rahat"
+        ]
+      },
+      {
+        "user_input": "sakin",
+        "intent": "mood_calm",
+        "response": "Sakinleşmek için dinleyebileceğiniz müzikler: Yüksek Sadakat - Aşk Durdukça, Feridun Düzağaç - İstanbul, Pinhani - Hele Bi Gel",
+        "mood": "sakin",
+        "tags": [
+          "sakin",
+          "huzurlu",
+          "rahat"
+        ]
+      },
+      {
+        "user_input": "dingin hissediyorum",
+        "intent": "mood_calm",
+        "response": "Dingin bir ruh hali için: Pinhani - Hele Bi Gel, Yüksek Sadakat - Aşk Durdukça, Feridun Düzağaç - İstanbul",
+        "mood": "dingin",
+        "tags": [
+          "dingin",
+          "sakin",
+          "huzurlu"
+        ]
+      },
+      {
+        "user_input": "meditasyon hissediyorum",
+        "intent": "mood_calm",
+        "response": "Meditasyon için sakinleştirici melodiler: Pinhani - Hele Bi Gel, Yüksek Sadakat - Aşk Durdukça, Feridun Düzağaç - İstanbul",
+        "mood": "meditasyon",
+        "tags": [
+          "meditasyon",
+          "sakin",
+          "huzurlu"
+        ]
+      },
+      {
+        "user_input": "nostaljik hissediyorum",
+        "intent": "mood_nostalgic",
+        "response": "Geçmişe dönmek için: Barış Manço - Dönence, Bülent Ortaçgil - Benimle Oynar mısın, Zerrin Özer - Gönül",
+        "mood": "nostaljik",
+        "tags": [
+          "nostaljik",
+          "eski",
+          "hatıra"
+        ]
+      },
+      {
+        "user_input": "hüzünlü hissediyorum",
+        "intent": "mood_melancholic",
+        "response": "Hüzünlü anlar için: Teoman - Hüzün, Sezen Aksu - Gidiyorum, Sebnem Ferah - Can Kırıkları",
+        "mood": "hüzünlü",
+        "tags": [
+          "hüzünlü",
+          "melankolik",
+          "kederli"
+        ]
+      },
+      {
+        "user_input": "melankolik hissediyorum",
+        "intent": "mood_melancholic",
+        "response": "Melankolik anlar için: Teoman - Hüzün, Sezen Aksu - Gidiyorum, Duman - Melankoli",
+        "mood": "melankolik",
+        "tags": [
+          "melankolik",
+          "hüzünlü",
+          "kederli"
+        ]
+      },
+      {
+        "user_input": "heyecanlı hissediyorum",
+        "intent": "mood_excited",
+        "response": "Heyecanınızı artıracak şarkılar: Athena - Fırtına, Tarkan - Yolla, Mabel Matiz - Öyle Kolaysa",
+        "mood": "heyecanlı",
+        "tags": [
+          "heyecanlı",
+          "enerjik",
+          "dinamik"
+        ]
+      },
+      {
+        "user_input": "yorgun hissediyorum",
+        "intent": "mood_tired",
+        "response": "Yorgunluğunuzu hafifletecek şarkılar: Pinhani - Sakin Ol, Yüksek Sadakat - Akşamüstü, Candan Erçetin - Yüreģim",
+        "mood": "yorgun",
+        "tags": [
+          "yorgun",
+          "dinlendirici",
+          "sakin"
+        ]
+      },
+      {
+        "user_input": "karalı hissediyorum",
+        "intent": "mood_motivational",
+        "response": "Karalı ruh halinize uygun motivasyonel şarkılar: Athena - Fırtına, Candan Erçetin - Yalan, Sezen Aksu - Seyret",
+        "mood": "karalı",
+        "tags": [
+          "karalı",
+          "motivasyonel",
+          "güçlü"
+        ]
+      },
+      {
+        "user_input": "maceraperest hissediyorum",
+        "intent": "mood_adventurous",
+        "response": "Macera dolu bir ruh hali için: Mor ve Ötesi - Cambaz, Athena - Fırtına, Cem Karaça - Deniz Üstü Köpürür",
+        "mood": "maceraperest",
+        "tags": [
+          "maceraperest",
+          "heyecanlı",
+          "dinamik"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "genre_based",
+    "examples": [
+      {
+        "user_input": "pop müzik",
+        "intent": "genre_pop",
+        "response": "Türkçe pop önerileri: Hadise - Şampiyon, Murat Boz - Janti, Gülşen - Bangır Bangır",
+        "genre": "pop"
+      },
+      {
+        "user_input": "rock",
+        "intent": "genre_rock",
+        "response": "Türkçe rock önerileri: Teoman - İki Yabancı, Şebnem Ferah - Sigara, maNga - Dünyanın Sonuna Doğmuşum",
+        "genre": "rock"
+      },
+      {
+        "user_input": "rap",
+        "intent": "genre_rap",
+        "response": "Türkçe rap önerileri: Ceza - Suspus, Ezhel - Geceler, Şanışer - Ludovico",
+        "genre": "rap"
+      },
+      {
+        "user_input": "arabesk",
+        "intent": "genre_arabesk",
+        "response": "Arabesk önerileri: Müslüm Gürses - Nilüfer, İbrahim Tatlıses - Mutlu Ol Yeter, Ferdi Tayfur - Huzurum Kalmadı",
+        "genre": "arabesk"
+      }
+    ]
+  }
+]

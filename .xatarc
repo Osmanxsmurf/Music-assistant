@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Osman-zdo-an-s-workspace-rbheop.eu-central-1.xata.sh/db/music_assistant:main",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
