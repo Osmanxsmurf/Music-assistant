@@ -1,0 +1,275 @@
+{
+  "version": "1.0",
+  "language": "tr",
+  "dataset_name": "Music Assistant AI Training Dataset - Part 1",
+  "description": "Türkçe müzik asistanı için gelişmiş AI eğitim veri seti",
+  "examples": [
+    {
+      "user_input": "merhaba",
+      "intent": "greet",
+      "response": "Merhaba! Bugün nasılsınız? Size hangi müzikleri önereyim?",
+      "tags": ["greeting", "welcome"]
+    },
+    {
+      "user_input": "selam",
+      "intent": "greet",
+      "response": "Selam! Music Assistant yapay zekaya hoş geldiniz. Nasıl yardımcı olabilirim?",
+      "tags": ["greeting", "welcome"]
+    },
+    {
+      "user_input": "nasılsın",
+      "intent": "ask_wellbeing",
+      "response": "Ben çok iyiyim, teşekkür ederim! Size nasıl yardımcı olabilirim?",
+      "tags": ["greeting", "wellbeing"]
+    },
+    {
+      "user_input": "bugün mutlu hissediyorum",
+      "intent": "mood_happy",
+      "response": "Mutlu olduğunuzu duymak harika! Size enerji verecek şarkılar öneriyorum.",
+      "mood": "mutlu",
+      "tags": ["mood", "happy"]
+    },
+    {
+      "user_input": "çok enerjik hissediyorum",
+      "intent": "mood_energetic",
+      "response": "Enerjinize katkıda bulunacak dinamik şarkılar size özel!",
+      "mood": "enerjik",
+      "tags": ["mood", "energetic"]
+    },
+    {
+      "user_input": "üzgünüm bugün",
+      "intent": "mood_sad",
+      "response": "Üzgün hissettiğinize üzüldüm. Size özel seçtiğim şarkılar belki moralinizi yükseltebilir.",
+      "mood": "üzgün",
+      "tags": ["mood", "sad"]
+    },
+    {
+      "user_input": "romantik hissediyorum",
+      "intent": "mood_romantic",
+      "response": "Romantik bir ruh halindeyseniz, işte tam size göre şarkılar!",
+      "mood": "romantik",
+      "tags": ["mood", "romantic"]
+    },
+    {
+      "user_input": "sakin müzikler duymak istiyorum",
+      "intent": "mood_calm",
+      "response": "Dinlendirici ve sakin müzikler sizin için hazır.",
+      "mood": "sakin",
+      "tags": ["mood", "calm", "request"]
+    },
+    {
+      "user_input": "nostaljik şarkılar öner",
+      "intent": "mood_nostalgic",
+      "response": "Sizi geçmişe götürecek nostaljik şarkılar hemen geliyor!",
+      "mood": "nostaljik",
+      "tags": ["mood", "nostalgic", "request"]
+    },
+    {
+      "user_input": "bugün keyifliyim",
+      "intent": "mood_happy",
+      "response": "Keyifli olmanıza sevindim! İşte size pozitif enerji verecek şarkılar.",
+      "mood": "mutlu",
+      "tags": ["mood", "happy"]
+    },
+    {
+      "user_input": "kendimi kötü hissediyorum",
+      "intent": "mood_sad",
+      "response": "Kendinizi kötü hissettiğinize üzüldüm. Bu şarkılar belki sizi biraz rahatlatabilir.",
+      "mood": "üzgün",
+      "tags": ["mood", "sad"]
+    },
+    {
+      "user_input": "bugün çok yorgunum",
+      "intent": "mood_tired",
+      "response": "Yorgun olduğunuzu duyduğuma üzüldüm. Size rahatlatıcı şarkılar öneriyorum.",
+      "mood": "yorgun",
+      "tags": ["mood", "tired"]
+    },
+    {
+      "user_input": "heyecanlı hissediyorum",
+      "intent": "mood_excited",
+      "response": "Heyecanlı olduğunuz için coşkulu şarkılar seçtim sizin için!",
+      "mood": "enerjik",
+      "tags": ["mood", "excited"]
+    },
+    {
+      "user_input": "şu an endişeliyim",
+      "intent": "mood_anxious",
+      "response": "Endişelerinizi hafifletmek için sakinleştirici şarkılar öneriyorum.",
+      "mood": "sakin",
+      "tags": ["mood", "anxious"]
+    },
+    {
+      "user_input": "bugün içime kapanık hissediyorum",
+      "intent": "mood_introspective",
+      "response": "Düşüncelerinize eşlik edebilecek içe dönük şarkıları sizin için seçtim.",
+      "mood": "melankolik",
+      "tags": ["mood", "introspective"]
+    },
+    {
+      "user_input": "bugün biraz hüzünlüyüm",
+      "intent": "mood_melancholic",
+      "response": "Hüzünlü anlarınıza eşlik edecek duygusal şarkılar hazır.",
+      "mood": "üzgün",
+      "tags": ["mood", "melancholic"]
+    },
+    {
+      "user_input": "duygusal hissediyorum",
+      "intent": "mood_emotional",
+      "response": "Duygusal anlarınıza yakışacak özel şarkı seçkileri hazırladım.",
+      "mood": "duygusal",
+      "tags": ["mood", "emotional"]
+    },
+    {
+      "user_input": "güne enerjik başladım",
+      "intent": "mood_energetic",
+      "response": "Güne enerjik başlamanız harika! Bu dinamik şarkılarla enerjiniz katlanacak.",
+      "mood": "enerjik",
+      "tags": ["mood", "energetic"]
+    },
+    {
+      "user_input": "bugün çok mutluyum",
+      "intent": "mood_happy",
+      "response": "Mutlu olmanıza sevindim! İşte size uygun neşeli şarkılar.",
+      "mood": "mutlu",
+      "tags": ["mood", "happy"]
+    },
+    {
+      "user_input": "dinlendirici müzik öner",
+      "intent": "request_calm",
+      "response": "Sizin için dinlendirici ve rahatlatıcı müzikler seçtim.",
+      "mood": "sakin",
+      "tags": ["request", "calm"]
+    },
+    {
+      "user_input": "motivasyon müziği öner",
+      "intent": "request_motivational",
+      "response": "Sizi motive edecek güçlü şarkılar hazırladım!",
+      "mood": "enerjik",
+      "tags": ["request", "motivational"]
+    },
+    {
+      "user_input": "rahatlamak istiyorum",
+      "intent": "request_relaxing",
+      "response": "Rahatlama ve gevşeme için ideal sakin müzikler burada.",
+      "mood": "sakin",
+      "tags": ["request", "relaxing"]
+    },
+    {
+      "user_input": "dans etmek istiyorum",
+      "intent": "request_dance",
+      "response": "Dans etmeniz için hareketli ritimler seçtim!",
+      "mood": "enerjik",
+      "tags": ["request", "dance"]
+    },
+    {
+      "user_input": "odaklanmak için müzik",
+      "intent": "request_focus",
+      "response": "Odaklanmanızı artıracak özel seçilmiş müzikler burada.",
+      "mood": "sakin",
+      "tags": ["request", "focus"]
+    },
+    {
+      "user_input": "uyumak için müzik",
+      "intent": "request_sleep",
+      "response": "Rahat bir uyku için sakinleştirici melodiler öneriyorum.",
+      "mood": "sakin",
+      "tags": ["request", "sleep"]
+    },
+    {
+      "user_input": "parti müziği öner",
+      "intent": "request_party",
+      "response": "Parti için coşkulu ve eğlenceli şarkılar hazır!",
+      "mood": "enerjik",
+      "tags": ["request", "party"]
+    },
+    {
+      "user_input": "spor yaparken dinlemek için",
+      "intent": "request_workout",
+      "response": "Spor performansınızı artıracak motivasyon müzikleri sizin için seçtim.",
+      "mood": "enerjik",
+      "tags": ["request", "workout"]
+    },
+    {
+      "user_input": "akşam için sakin müzik",
+      "intent": "request_evening",
+      "response": "Akşam saatleri için rahatlatıcı melodileri keşfedin.",
+      "mood": "sakin",
+      "tags": ["request", "evening", "calm"]
+    },
+    {
+      "user_input": "sabah dinlemek için",
+      "intent": "request_morning",
+      "response": "Güne enerjik başlamanız için ideal sabah müzikleri burada.",
+      "mood": "enerjik",
+      "tags": ["request", "morning"]
+    },
+    {
+      "user_input": "düşünmek için müzik",
+      "intent": "request_thinking",
+      "response": "Düşüncelerinize derinlik katacak müzikleri sizin için seçtim.",
+      "mood": "sakin",
+      "tags": ["request", "thinking"]
+    },
+    {
+      "user_input": "şarkı öner",
+      "intent": "request_recommendation",
+      "response": "Ruh halinizi belirtirseniz, size özel şarkılar önerebilirim. Bugün nasıl hissediyorsunuz?",
+      "tags": ["request", "general"]
+    },
+    {
+      "user_input": "yeni müzik keşfetmek istiyorum",
+      "intent": "request_discover",
+      "response": "Müzik zevkinizi genişletmek için farklı türlerde öneriler hazırladım.",
+      "tags": ["request", "discover"]
+    },
+    {
+      "user_input": "pop müzik öner",
+      "intent": "request_genre_pop",
+      "response": "En iyi Türkçe ve yabancı pop şarkılarını sizin için bir araya getirdim.",
+      "tags": ["request", "genre", "pop"]
+    },
+    {
+      "user_input": "rock müzik öner",
+      "intent": "request_genre_rock",
+      "response": "Rock tutkunları için özel seçilmiş şarkılar listenizde!",
+      "tags": ["request", "genre", "rock"]
+    },
+    {
+      "user_input": "rap öner",
+      "intent": "request_genre_rap",
+      "response": "En iyi rap ve hip-hop parçaları sizin için hazır.",
+      "tags": ["request", "genre", "rap"]
+    },
+    {
+      "user_input": "klasik müzik dinlemek istiyorum",
+      "intent": "request_genre_classical",
+      "response": "Klasik müzik hazineleri ile ruhunuzu besleyin.",
+      "tags": ["request", "genre", "classical"]
+    },
+    {
+      "user_input": "elektronik müzik öner",
+      "intent": "request_genre_electronic",
+      "response": "En iyi elektronik müzik seçkilerini keşfedin!",
+      "tags": ["request", "genre", "electronic"]
+    },
+    {
+      "user_input": "jazz müzik önerir misin",
+      "intent": "request_genre_jazz",
+      "response": "Jazz'ın büyülü dünyasından seçilmiş eserler sizleri bekliyor.",
+      "tags": ["request", "genre", "jazz"]
+    },
+    {
+      "user_input": "türkü öner",
+      "intent": "request_genre_folk",
+      "response": "Türk halk müziğinin en güzel örnekleriyle Anadolu'nun sesini hissedin.",
+      "tags": ["request", "genre", "folk"]
+    },
+    {
+      "user_input": "arabesk müzik öner",
+      "intent": "request_genre_arabesque",
+      "response": "Arabesk müziğin duygusal dünyasından öneriler hazırladım.",
+      "tags": ["request", "genre", "arabesque"]
+    }
+  ]
+}

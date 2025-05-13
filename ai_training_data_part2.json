@@ -1,0 +1,286 @@
+{
+  "version": "1.0",
+  "language": "tr",
+  "dataset_name": "Music Assistant AI Training Dataset - Part 2",
+  "description": "Türkçe müzik asistanı için gelişmiş AI eğitim veri seti - Sanatçı talepleri ve karmaşık sorgular",
+  "examples": [
+    {
+      "user_input": "Tarkan dinlemek istiyorum",
+      "intent": "request_artist",
+      "response": "Tarkan'ın en sevilen şarkılarını sizin için hazırladım!",
+      "artist": "Tarkan",
+      "tags": ["request", "artist"]
+    },
+    {
+      "user_input": "Sezen Aksu şarkıları öner",
+      "intent": "request_artist",
+      "response": "Türk pop müziğinin divası Sezen Aksu'dan seçme şarkılar sizin için hazır.",
+      "artist": "Sezen Aksu",
+      "tags": ["request", "artist"]
+    },
+    {
+      "user_input": "Duman grubundan öneriler",
+      "intent": "request_artist",
+      "response": "Duman grubunun en hit parçalarını sizin için listeledim.",
+      "artist": "Duman",
+      "tags": ["request", "artist", "rock"]
+    },
+    {
+      "user_input": "MFÖ şarkıları",
+      "intent": "request_artist",
+      "response": "MFÖ'nün zamansız hit şarkıları sizin için hazır!",
+      "artist": "MFÖ",
+      "tags": ["request", "artist"]
+    },
+    {
+      "user_input": "Teoman dinlemek istiyorum",
+      "intent": "request_artist",
+      "response": "Teoman'ın duygu dolu şarkılarını sizin için seçtim.",
+      "artist": "Teoman",
+      "tags": ["request", "artist"]
+    },
+    {
+      "user_input": "Mor ve Ötesi öner",
+      "intent": "request_artist",
+      "response": "Mor ve Ötesi'nin rock dünyasına damga vuran parçalarını keşfedin!",
+      "artist": "Mor ve Ötesi",
+      "tags": ["request", "artist", "rock"]
+    },
+    {
+      "user_input": "Mabel Matiz şarkıları",
+      "intent": "request_artist",
+      "response": "Mabel Matiz'in en sevilen şarkılarını sizin için derledim.",
+      "artist": "Mabel Matiz",
+      "tags": ["request", "artist"]
+    },
+    {
+      "user_input": "Barış Manço klasikleri",
+      "intent": "request_artist",
+      "response": "Barış Manço'nun unutulmaz klasiklerini dinlemeye ne dersiniz?",
+      "artist": "Barış Manço",
+      "tags": ["request", "artist", "classic"]
+    },
+    {
+      "user_input": "Cem Karaca öner",
+      "intent": "request_artist",
+      "response": "Anadolu rock'ın efsane ismi Cem Karaca'nın şarkılarını sizin için listeledim.",
+      "artist": "Cem Karaca",
+      "tags": ["request", "artist", "rock"]
+    },
+    {
+      "user_input": "Manga şarkıları dinlemek istiyorum",
+      "intent": "request_artist",
+      "response": "maNga'nın alternatif rock dünyasındaki hit parçalarını keşfedin!",
+      "artist": "maNga",
+      "tags": ["request", "artist", "rock"]
+    },
+    {
+      "user_input": "Sıla'dan bir şeyler çal",
+      "intent": "request_artist",
+      "response": "Sıla'nın duygu dolu şarkılarını sizin için hazırladım.",
+      "artist": "Sıla",
+      "tags": ["request", "artist"]
+    },
+    {
+      "user_input": "Gökhan Türkmen dinlemek istiyorum",
+      "intent": "request_artist",
+      "response": "Gökhan Türkmen'in etkileyici şarkılarını keşfetmeye ne dersiniz?",
+      "artist": "Gökhan Türkmen",
+      "tags": ["request", "artist"]
+    },
+    {
+      "user_input": "Kenan Doğulu şarkıları önerir misin",
+      "intent": "request_artist",
+      "response": "Kenan Doğulu'nun enerjik pop şarkılarını sizin için seçtim!",
+      "artist": "Kenan Doğulu",
+      "tags": ["request", "artist", "pop"]
+    },
+    {
+      "user_input": "Şebnem Ferah rock şarkıları",
+      "intent": "request_artist",
+      "response": "Türk rock müziğinin güçlü sesi Şebnem Ferah'tan seçmeler sizin için hazır!",
+      "artist": "Şebnem Ferah",
+      "tags": ["request", "artist", "rock"]
+    },
+    {
+      "user_input": "Haluk Levent dinlemek istiyorum",
+      "intent": "request_artist",
+      "response": "Haluk Levent'in rock ve halk müziğini harmanlayan eşsiz tarzını keşfedin!",
+      "artist": "Haluk Levent",
+      "tags": ["request", "artist", "rock", "folk"]
+    },
+    {
+      "user_input": "bugün mutluyum biraz Tarkan dinlemek istiyorum",
+      "intent": "complex_request",
+      "response": "Mutlu ruh halinize uygun Tarkan şarkıları hazırladım. Keyifli dinlemeler!",
+      "mood": "mutlu",
+      "artist": "Tarkan",
+      "tags": ["mood", "artist", "happy"]
+    },
+    {
+      "user_input": "üzgünüm, Sezen Aksu dinleyerek rahatlamak istiyorum",
+      "intent": "complex_request",
+      "response": "Duygularınıza eşlik edecek Sezen Aksu şarkılarını sizin için seçtim. Umarım kendinizi daha iyi hissedersiniz.",
+      "mood": "üzgün",
+      "artist": "Sezen Aksu",
+      "tags": ["mood", "artist", "sad"]
+    },
+    {
+      "user_input": "romantik hissediyorum, Kenan Doğulu'dan aşk şarkıları önerir misin",
+      "intent": "complex_request",
+      "response": "Romantik anlarınıza eşlik edecek Kenan Doğulu'dan aşk şarkıları hazır!",
+      "mood": "romantik",
+      "artist": "Kenan Doğulu",
+      "tags": ["mood", "artist", "romantic"]
+    },
+    {
+      "user_input": "bu sabah enerjik hissediyorum, bana Athena önerir misin",
+      "intent": "complex_request",
+      "response": "Enerjik sabahınıza uygun Athena şarkılarıyla güne dinamik başlayın!",
+      "mood": "enerjik",
+      "artist": "Athena",
+      "tags": ["mood", "artist", "energetic"]
+    },
+    {
+      "user_input": "melankolik hissediyorum, Mor ve Ötesi dinlemek istiyorum",
+      "intent": "complex_request",
+      "response": "Melankolik ruh halinize eşlik edecek Mor ve Ötesi şarkılarını sizin için seçtim.",
+      "mood": "melankolik",
+      "artist": "Mor ve Ötesi",
+      "tags": ["mood", "artist", "melancholic"]
+    },
+    {
+      "user_input": "hareketli Tarkan şarkıları öner",
+      "intent": "complex_request",
+      "response": "Tarkan'ın en hareketli ve coşkulu şarkılarını sizin için bir araya getirdim!",
+      "mood": "enerjik",
+      "artist": "Tarkan",
+      "tags": ["mood", "artist", "energetic"]
+    },
+    {
+      "user_input": "Duman'dan melankolik parçalar dinlemek istiyorum",
+      "intent": "complex_request",
+      "response": "Duman'ın duygu yüklü, melankolik parçalarını sizin için listeledim.",
+      "mood": "melankolik",
+      "artist": "Duman",
+      "tags": ["mood", "artist", "melancholic"]
+    },
+    {
+      "user_input": "sakin çalışırken dinlemelik müzikler",
+      "intent": "complex_request",
+      "response": "Çalışırken dikkatinizi dağıtmayacak, sakin ve rahatlatıcı melodileri sizin için derledim.",
+      "mood": "sakin",
+      "context": "work",
+      "tags": ["mood", "context", "calm"]
+    },
+    {
+      "user_input": "akşam romantik bir yemek için çalma listesi",
+      "intent": "complex_request",
+      "response": "Romantik akşam yemeğinize eşlik edecek özel bir çalma listesi hazırladım.",
+      "mood": "romantik",
+      "context": "dinner",
+      "tags": ["mood", "context", "romantic"]
+    },
+    {
+      "user_input": "yolculukta dinlemelik şarkılar öner",
+      "intent": "complex_request",
+      "response": "Yolculuklarınızı keyifli kılacak dinamik ve akıcı bir çalma listesi hazırladım.",
+      "context": "travel",
+      "tags": ["context", "travel"]
+    },
+    {
+      "user_input": "ev temizlerken dinlemek için müzik",
+      "intent": "complex_request",
+      "response": "Ev temizliğinize enerji katacak, tempolu şarkılardan oluşan bir liste hazırladım!",
+      "mood": "enerjik",
+      "context": "cleaning",
+      "tags": ["mood", "context", "energetic", "cleaning"]
+    },
+    {
+      "user_input": "arkadaşlarla buluşmak için parti müziği",
+      "intent": "complex_request",
+      "response": "Arkadaş buluşmanızı şenlendirecek, eğlenceli parti müzikleri listesi hazır!",
+      "mood": "enerjik",
+      "context": "party",
+      "tags": ["mood", "context", "energetic", "party"]
+    },
+    {
+      "user_input": "kahve içerken dinlemelik sakin müzikler",
+      "intent": "complex_request",
+      "response": "Kahve keyfini tamamlayacak, sakin ve dinlendirici melodileri bir araya getirdim.",
+      "mood": "sakin",
+      "context": "coffee",
+      "tags": ["mood", "context", "calm", "coffee"]
+    },
+    {
+      "user_input": "yoga yaparken dinlemelik müzikler",
+      "intent": "complex_request",
+      "response": "Yoga pratiğinize huzur katacak, meditatif müzikler sizin için hazır.",
+      "mood": "sakin",
+      "context": "yoga",
+      "tags": ["mood", "context", "calm", "yoga"]
+    },
+    {
+      "user_input": "yürüyüş yaparken dinlemelik şarkılar",
+      "intent": "complex_request",
+      "response": "Yürüyüşünüze ritim katacak, tempolu şarkılardan oluşan bir liste hazırladım!",
+      "mood": "enerjik",
+      "context": "walking",
+      "tags": ["mood", "context", "energetic", "walking"]
+    },
+    {
+      "user_input": "ne tür müzikler önerirsin",
+      "intent": "ask_capabilities",
+      "response": "Size ruh halinize göre pop, rock, elektronik, klasik, jazz, türkü, arabesk gibi çeşitli türlerde müzikler önerebilirim. Nasıl hissediyorsunuz veya hangi tür müzik dinlemek istersiniz?",
+      "tags": ["capabilities", "question"]
+    },
+    {
+      "user_input": "hangi sanatçıları biliyorsun",
+      "intent": "ask_capabilities",
+      "response": "Tarkan, Sezen Aksu, Duman, MFÖ, Teoman, Mor ve Ötesi, Mabel Matiz, Barış Manço, Cem Karaca, Şebnem Ferah gibi birçok Türk sanatçı ve birçok yabancı sanatçı hakkında bilgiye sahibim. Hangi sanatçıyı dinlemek istersiniz?",
+      "tags": ["capabilities", "question", "artists"]
+    },
+    {
+      "user_input": "müzik zevkimi nasıl anlayabilirsin",
+      "intent": "ask_capabilities",
+      "response": "Bana sevdiğiniz sanatçıları, şarkıları veya müzik türlerini söylerseniz, tercihlerinize uygun önerilerde bulunabilirim. Ayrıca ruh halinizi belirtirseniz, ona göre de müzik önerebilirim.",
+      "tags": ["capabilities", "question", "preferences"]
+    },
+    {
+      "user_input": "en sevdiğin şarkı ne",
+      "intent": "ask_personal",
+      "response": "Bir yapay zeka olarak gerçek bir tercihim yok, ancak size yardımcı olmak için milyonlarca şarkı hakkında bilgi sahibiyim. Sizin favori şarkınız nedir?",
+      "tags": ["personal", "question"]
+    },
+    {
+      "user_input": "teşekkürler",
+      "intent": "gratitude",
+      "response": "Rica ederim! Başka müzik önerisi isterseniz bana sorabilirsiniz. Keyifli dinlemeler!",
+      "tags": ["gratitude"]
+    },
+    {
+      "user_input": "yardımın için sağol",
+      "intent": "gratitude",
+      "response": "Ne demek, her zaman yardımcı olmaktan mutluluk duyarım! Başka bir şey isterseniz buradayım.",
+      "tags": ["gratitude"]
+    },
+    {
+      "user_input": "çok iyi tavsiyeler bunlar",
+      "intent": "compliment",
+      "response": "Teşekkür ederim! Beğenmenize sevindim. Müzik zevkinize uygun daha fazla öneri için her zaman buradayım.",
+      "tags": ["compliment"]
+    },
+    {
+      "user_input": "bu öneriler berbattı",
+      "intent": "complaint",
+      "response": "Önerilerimin beklentilerinizi karşılayamadığı için özür dilerim. Daha iyi öneriler sunabilmem için müzik tercihlerinizi veya ruh halinizi daha detaylı paylaşabilirseniz sevinirim.",
+      "tags": ["complaint"]
+    },
+    {
+      "user_input": "çok yavaş cevap veriyorsun",
+      "intent": "complaint",
+      "response": "Gecikmeler için özür dilerim. Sizin için en iyi deneyimi sunmak için çalışıyoruz. Sabrınız için teşekkürler.",
+      "tags": ["complaint", "performance"]
+    }
+  ]
+}

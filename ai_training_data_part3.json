@@ -1,0 +1,238 @@
+{
+  "version": "1.0",
+  "language": "tr",
+  "dataset_name": "Music Assistant AI Training Dataset - Part 3",
+  "description": "Türkçe müzik asistanı için gelişmiş AI eğitim veri seti - Gelişmiş dil özellikleri ve senaryolar",
+  "examples": [
+    {
+      "user_input": "pop müzik dinlemek istiyorum ama aşk şarkısı olmasın",
+      "intent": "complex_exclusion",
+      "response": "Aşk teması içermeyen pop şarkıları için özel bir seçki hazırladım. Daha çok yaşam, özgürlük ve enerji temalı parçaları tercih ettim.",
+      "genre": "pop",
+      "exclusion": "romance",
+      "tags": ["request", "exclusion", "pop"]
+    },
+    {
+      "user_input": "bugün yağmurlu hava için müzik önerir misin",
+      "intent": "contextual_request",
+      "response": "Yağmurlu hava için mükemmel, dinlendirici ve hafif melankolik bir müzik listesi hazırladım. Pencere kenarında keyifle dinleyebilirsiniz.",
+      "context": "rainy",
+      "mood": "melankolik",
+      "tags": ["request", "context", "weather"]
+    },
+    {
+      "user_input": "eskiden dinlediğim nostaljik 90'lar müziklerini öner",
+      "intent": "era_specific",
+      "response": "90'ların unutulmaz Türkçe ve yabancı hit parçalarından oluşan nostaljik bir liste hazırladım. Bu şarkılar sizi geçmişe götürecek!",
+      "era": "90s",
+      "mood": "nostaljik",
+      "tags": ["request", "era", "nostalgic"]
+    },
+    {
+      "user_input": "düğün için hareketli şarkılar önerir misin",
+      "intent": "event_specific",
+      "response": "Düğün için herkesin dans edebileceği, eğlenceli ve hareketli şarkılardan oluşan bir liste hazırladım. Kutlamanızı canlandıracak parçalar bunlar!",
+      "event": "wedding",
+      "mood": "enerjik",
+      "tags": ["request", "event", "energetic"]
+    },
+    {
+      "user_input": "çocuklarla dinlemek için uygun müzikler",
+      "intent": "audience_specific",
+      "response": "Çocuklarla birlikte dinleyebileceğiniz, eğlenceli, öğretici ve pozitif müziklerden oluşan bir seçki hazırladım. Tüm aile için ideal!",
+      "audience": "children",
+      "tags": ["request", "audience", "family"]
+    },
+    {
+      "user_input": "araba kullanırken dinlemek için müzik",
+      "intent": "activity_specific",
+      "response": "Yolculuğunuzu keyifli kılacak, sürüş deneyiminize ritim katacak şarkılardan oluşan bir yol müziği listesi hazırladım!",
+      "activity": "driving",
+      "tags": ["request", "activity", "driving"]
+    },
+    {
+      "user_input": "yemek yaparken dinlenecek şarkılar",
+      "intent": "activity_specific",
+      "response": "Yemek pişirirken mutfakta keyifli vakit geçirmenizi sağlayacak, enerjik ve eğlenceli şarkılar önerdim!",
+      "activity": "cooking",
+      "tags": ["request", "activity", "cooking"]
+    },
+    {
+      "user_input": "kahvaltı için güne başlarken dinlenecek müzikler",
+      "intent": "time_specific",
+      "response": "Güne güzel bir başlangıç yapmanız için kahvaltınıza eşlik edecek, taze ve canlandırıcı müzikler seçtim!",
+      "time": "morning",
+      "activity": "breakfast",
+      "tags": ["request", "time", "morning", "activity"]
+    },
+    {
+      "user_input": "gece yatmadan önce dinlenecek sakin şarkılar",
+      "intent": "time_specific",
+      "response": "Uyku öncesi rahatlamanızı sağlayacak, sakinleştirici ve dinlendirici melodilerden oluşan bir gece listesi hazırladım.",
+      "time": "night",
+      "mood": "sakin",
+      "tags": ["request", "time", "night", "calm"]
+    },
+    {
+      "user_input": "İngilizce değil Türkçe şarkılar istiyorum",
+      "intent": "language_specific",
+      "response": "Sizin için özel olarak seçilmiş Türkçe şarkılardan oluşan bir liste hazırladım. Yerli müziğin en güzel örneklerini bulacaksınız!",
+      "language": "turkish",
+      "tags": ["request", "language", "turkish"]
+    },
+    {
+      "user_input": "hem hüzünlü hem umut verici müzikler",
+      "intent": "mixed_mood",
+      "response": "Hem duygusal hem de içinde umut barındıran şarkılardan özel bir seçki hazırladım. Bu müzikler duygularınızın derinliklerine inerken sizi umutla da dolduracak.",
+      "mood": ["melancholic", "hopeful"],
+      "tags": ["request", "mixed_mood"]
+    },
+    {
+      "user_input": "ben çok yorgunum ama biraz motivasyona ihtiyacım var",
+      "intent": "contradictory_mood",
+      "response": "Yorgunluğunuzu anlayışla karşılayacak ama aynı zamanda size motivasyon da sağlayacak özel bir müzik listesi hazırladım. Bu şarkılar hem dinlendirici hem de ilham verici!",
+      "mood": ["tired", "motivational"],
+      "tags": ["request", "contradictory_mood"]
+    },
+    {
+      "user_input": "Sezen Aksu'nun hangi şarkısı en popüler",
+      "intent": "information_query",
+      "response": "Sezen Aksu'nun tüm zamanların en popüler şarkıları arasında 'Gülümse', 'Firuze', 'İstanbul İstanbul Olalı', 'Kutlama' ve 'Seni Yerler' bulunuyor. Hangisini dinlemek istersiniz?",
+      "artist": "Sezen Aksu",
+      "query_type": "popularity",
+      "tags": ["query", "artist", "popularity"]
+    },
+    {
+      "user_input": "bana Türk rock grupları söyler misin",
+      "intent": "information_query",
+      "response": "Türkiye'nin önde gelen rock grupları arasında Duman, Mor ve Ötesi, maNga, Athena, Pentagram (Mezarkabul), Kurban, Yüksek Sadakat, Pinhani, Redd ve Gece sayılabilir. Bunlardan hangisini dinlemek istersiniz?",
+      "query_type": "genre_artists",
+      "genre": "rock",
+      "tags": ["query", "genre", "rock", "groups"]
+    },
+    {
+      "user_input": "2023'ün en iyi şarkıları neler",
+      "intent": "time_query",
+      "response": "2023'ün en popüler Türkçe şarkıları arasında [Güncel 2023 hit şarkılar buraya] bulunuyor. Yılın en hit parçalarını dinlemek ister misiniz?",
+      "query_type": "year_best",
+      "year": "2023",
+      "tags": ["query", "year", "popular"]
+    },
+    {
+      "user_input": "listeye şarkı nasıl eklerim",
+      "intent": "help_query",
+      "response": "Beğendiğiniz şarkıların yanındaki kalp simgesine tıklayarak favorilerinize ekleyebilirsiniz. Ayrıca, çalma listenize eklemek için şarkıların yanındaki '+' simgesini kullanabilirsiniz.",
+      "query_type": "how_to",
+      "feature": "playlist",
+      "tags": ["query", "help", "how_to"]
+    },
+    {
+      "user_input": "bu şarkıyı sevdim, bunun gibi başka öneriler yapabilir misin",
+      "intent": "song_similarity",
+      "response": "Bu şarkıyı beğenmenize sevindim! Benzer tarzda, ritimde ve duyguda olan başka şarkıları sizin için listeledim. Bu önerileri de beğeneceğinizi düşünüyorum!",
+      "query_type": "similar",
+      "tags": ["query", "similar", "recommendation"]
+    },
+    {
+      "user_input": "tam olarak ne tür müzikler önerebilirsin",
+      "intent": "capabilities_query",
+      "response": "Size pop, rock, elektronik, rap, klasik, jazz, halk müziği, arabesk, nostalji ve daha birçok türde müzik önerebilirim. Ayrıca ruh halinize, günün saatine, etkinliğinize veya dilinize göre özel öneriler de sunabilirim. Ne tür müzik dinlemek istersiniz?",
+      "query_type": "capability",
+      "tags": ["query", "capabilities"]
+    },
+    {
+      "user_input": "benim için rastgele bir şarkı seç",
+      "intent": "random_request",
+      "response": "Sizin için tamamen rastgele bir şarkı seçtim! Umarım beğenirsiniz. Beğenmezseniz, başka bir rastgele öneri için bana söylemeniz yeterli.",
+      "query_type": "random",
+      "tags": ["request", "random"]
+    },
+    {
+      "user_input": "bugün cumartesi, parti için müzik öner",
+      "intent": "day_specific",
+      "response": "Cumartesi akşamı parti için enerjik ve eğlenceli şarkılardan oluşan mükemmel bir liste hazırladım! Bu şarkılarla partiniz canlanacak!",
+      "day": "saturday",
+      "context": "party",
+      "tags": ["request", "day", "party"]
+    },
+    {
+      "user_input": "ben üzgünüm ama arkadaşlarım için neşeli şarkılar önerir misin",
+      "intent": "others_mood",
+      "response": "Arkadaşlarınızı neşelendirecek, eğlenceli ve pozitif enerji veren şarkılar seçtim. Umarım bu müzikler hem onların keyfini yerine getirir hem de sizin de moralinizi düzeltir!",
+      "self_mood": "sad",
+      "others_mood": "happy",
+      "tags": ["request", "others_mood"]
+    },
+    {
+      "user_input": "benim tarzım daha çok rock ama eşim pop seviyor, ortak dinleyebileceğimiz şeyler öner",
+      "intent": "compromise_taste",
+      "response": "Rock ve pop türlerinin kesişiminde bulunan, hem sizin hem de eşinizin zevkine hitap edebilecek şarkılardan oluşan bir liste hazırladım. Pop-rock fusion, rock alt yapılı pop şarkıları ve melodik rock parçaları içeriyor!",
+      "taste1": "rock",
+      "taste2": "pop",
+      "tags": ["request", "compromise", "mixed_genre"]
+    },
+    {
+      "user_input": "şu an çalan şarkıyı değiştir",
+      "intent": "playback_control",
+      "response": "Tabi, sizin için şarkıyı değiştirdim. Bu yeni şarkıyı beğeneceğinizi umuyorum! Beğenmezseniz tekrar değiştirebilirim.",
+      "control": "skip",
+      "tags": ["control", "playback"]
+    },
+    {
+      "user_input": "şarkıyı durdur",
+      "intent": "playback_control",
+      "response": "Müziği durdurdum. Tekrar başlatmak istediğinizde bana söylemeniz yeterli.",
+      "control": "pause",
+      "tags": ["control", "playback"]
+    },
+    {
+      "user_input": "ses seviyesini azalt",
+      "intent": "playback_control",
+      "response": "Ses seviyesini azalttım. Şimdi daha uygun bir seviyede mi?",
+      "control": "volume_down",
+      "tags": ["control", "volume"]
+    },
+    {
+      "user_input": "şarkıyı tekrarla",
+      "intent": "playback_control",
+      "response": "Bu şarkıyı tekrara aldım. Şarkı bittiğinde tekrar başlayacak.",
+      "control": "repeat",
+      "tags": ["control", "playback"]
+    },
+    {
+      "user_input": "rastgele çal",
+      "intent": "playback_control",
+      "response": "Rastgele çalma modunu aktifleştirdim. Şarkılar artık karışık sırada çalınacak.",
+      "control": "shuffle",
+      "tags": ["control", "playback"]
+    },
+    {
+      "user_input": "şu an ne çalıyor",
+      "intent": "playback_query",
+      "response": "Şu an çalan şarkı: [Şarkı Adı] - [Sanatçı]. Bu şarkı [Albüm Adı] albümünden ve [Yıl] yılında yayınlandı.",
+      "query_type": "now_playing",
+      "tags": ["query", "now_playing"]
+    },
+    {
+      "user_input": "şimdi tam dikkatimi verebileceğim bir şeyler çal",
+      "intent": "focus_request",
+      "response": "Konsantrasyonunuzu artıracak, sözleri minimal olan veya hiç söz içermeyen, sakin tempolu müzikler seçtim. Bu tarz müzikler dikkat dağıtmadan odaklanmanıza yardımcı olur.",
+      "context": "focus",
+      "tags": ["request", "focus"]
+    },
+    {
+      "user_input": "beni biraz olsun güldürecek şarkılar var mı",
+      "intent": "emotional_need",
+      "response": "Eğlenceli, komik sözleri olan ve pozitif enerji veren şarkılardan oluşan bir seçki hazırladım! Bu şarkılar ruh halinizi yükseltecek ve gülümsemenizi sağlayacak.",
+      "emotional_need": "joy",
+      "tags": ["request", "emotional", "happy"]
+    },
+    {
+      "user_input": "çok stresli bir gün geçirdim, rahatlamak istiyorum",
+      "intent": "emotional_need",
+      "response": "Stresli gününüzden sonra rahatlamanıza yardımcı olacak, sakinleştirici ve huzur veren melodiler seçtim. Bu müzikler gerginliğinizi alıp sizi dinlendirecek.",
+      "emotional_need": "relaxation",
+      "tags": ["request", "emotional", "stress_relief"]
+    }
+  ]
+}
