@@ -1,1 +1,15 @@
-{"type": "commonjs"}
+{
+  "name": "lastfm-importer",
+  "version": "1.0.0",
+  "description": "Last.fm veri toplama ve işleme scripti",
+  "main": "lastfm_importer.js",
+  "scripts": {
+    "start": "node lastfm_importer.js"
+  },
+  "author": "osmanxsmurf",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

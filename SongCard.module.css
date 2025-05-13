@@ -1,0 +1,163 @@
+.songCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 220px;
+}
+
+.songCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.songImage {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  font-size: 2.5rem;
+}
+
+.songInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.songTitle {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artistName {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.songMeta {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.75rem;
+}
+
+.genre, .mood {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.mood {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.songActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+.playButton, .addButton, .favoriteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  padding: 0.5rem;
+}
+
+.playButton:hover, .addButton:hover, .favoriteButton:hover {
+  transform: scale(1.1);
+}
+
+/* Tema uyumluluğu */
+:global(.theme-dark) .songCard {
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+:global(.theme-dark) .songTitle {
+  color: #f8f9fa;
+}
+
+:global(.theme-dark) .artistName {
+  color: #adb5bd;
+}
+
+:global(.theme-dark) .genre, :global(.theme-dark) .mood {
+  background-color: #495057;
+  color: #e9ecef;
+}
+
+/* Sunset tema */
+:global(.theme-sunset) .songCard {
+  background-color: #fff7ed;
+  box-shadow: 0 4px 6px rgba(251, 146, 60, 0.2);
+}
+
+:global(.theme-sunset) .songTitle {
+  color: #7c2d12;
+}
+
+:global(.theme-sunset) .artistName {
+  color: #9a3412;
+}
+
+:global(.theme-sunset) .genre, :global(.theme-sunset) .mood {
+  background-color: #fed7aa;
+  color: #9a3412;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .songCard {
+    min-height: 180px;
+  }
+  
+  .songImage {
+    height: 120px;
+  }
+}
