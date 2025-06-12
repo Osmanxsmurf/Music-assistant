@@ -9,7 +9,7 @@
   "author": "osmanxsmurf",
   "dependencies": {
     "axios": "^1.6.0",
-    "fs": "0.0.1-security",
+    "fs": "0.0.2",
     "path": "^0.12.7"
   }
 }
